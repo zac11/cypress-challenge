@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "cy:run": "node cypress/scripts/cypress.js",
-    "report": "cypress run --spec cypress/integration/challenge/day1_2.js --reporter mochawesome -- --record false"
+    "report": "cypress run --spec cypress/integration/challenge/day3_4.js --reporter mochawesome -- --record false"
   },
   "repository": {
     "type": "git",

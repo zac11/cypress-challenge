@@ -46,3 +46,6 @@ Cypress.Commands.add('searchProduct',(productName)=>{
     cy.get('#searchbox > .btn').click();
     cy.url().should('include','submit_search=');
 });
+
+//import for cypress file upload
+import 'cypress-file-upload';

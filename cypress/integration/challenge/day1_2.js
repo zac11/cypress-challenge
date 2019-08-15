@@ -39,6 +39,7 @@ describe("Searching for a product",()=>{
 
     it('goes to product page and checks for pre-selected options',()=>{
         cy.get('.replace-2x.img-responsive').first().click();
-        cy.get('#group_1').find("[title=S]").should('have.attr',"selected")
+        cy.get('#group_1').find("[title=S]").should('have.attr',"selected");
+        
     });
 })

@@ -7,7 +7,7 @@
     "test": "test",
     "cy:run": "node cypress/scripts/cypress.js",
     "report": "cypress run --spec cypress/integration/challenge/day3_4.js --reporter mochawesome -- --record false",
-    "integration":"cypress run --spec cypress/integration/challenge/* --reporter mochawesome -- --record false"
+    "integration": "cypress run --spec cypress/integration/challenge/* --reporter mochawesome -- --record false"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/zac11/cypress-challenge#readme",
   "devDependencies": {
     "cypress": "^3.4.1",
+    "cypress-cucumber-preprocessor": "^1.13.1",
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.0.1",
     "mochawesome-report-generator": "^4.0.1"
@@ -31,5 +32,8 @@
   "dependencies": {
     "cypress-file-upload": "^3.3.3",
     "mocha": "^5.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }

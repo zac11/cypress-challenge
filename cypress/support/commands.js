@@ -34,9 +34,9 @@ Cypress.Commands.add("clickRandomCategory",()=>{
 
 
 Cypress.Commands.add("clickRandomProduct",()=>{
-    cy.get('.homefeatured').children().its('length').then(($length)=>{
+    cy.get('#homefeatured').children().its('length').then(($length)=>{
         const randomnumber = Cypress._.random(0,$length-1);
-        cy.get('.homefeatured').children().eq(randomnumber).click();
+        cy.get('#homefeatured').children().eq(randomnumber).click();
         cy.url().should('include','controller=product');
     });
 });
